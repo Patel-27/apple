@@ -53,7 +53,7 @@ menu = ["Home","Login","SignUp","ContactUs"]
 choice = st.sidebar.selectbox("Menu",menu)
 
 if choice=="Home":
-    st.title("Welcome to the System")
+    st.title("Apple Quality Classification System")
 if choice=="SignUp":
         Fname = st.text_input("First Name")
         Lname = st.text_input("Last Name")
@@ -143,7 +143,6 @@ if choice=="Login":
                             test_prediction = model[5].predict(tdata)
                             query=test_prediction[0]
                             st.success(query)
-
                                      
             else:
                 st.warning("Incorrect Email/Password")
