@@ -49,11 +49,11 @@ def delete_user(Email):
     c.execute("DELETE FROM userstable WHERE Email="+"'"+Email+"'")
     conn.commit() 
 
-menu = ["Home","Login","SignUp","ContactUs"]
-choice = st.sidebar.selectbox("Menu",menu)
+Menu = ["Home","Login","SignUp"]
+choice = st.sidebar.selectbox("Menu",Menu)
 
 if choice=="Home":
-    st.title("Apple Quality Classification System")
+    st.title("Apple Quality Classification")
 if choice=="SignUp":
         Fname = st.text_input("First Name")
         Lname = st.text_input("Last Name")
